@@ -13,6 +13,9 @@ class Sidebar extends Component {
           <h4 className="menu-item active">
             <NavLink to="/authors">AUTHORS</NavLink>
           </h4>
+          <h4 className="menu-item active">
+            <NavLink to="/books">BOOK LIST</NavLink>
+          </h4>
         </section>
       </div>
     );
