@@ -10,6 +10,7 @@ class BookList extends Component {
   constructor(props) {
     super(props);
     this.state = {
+      books: this.props.books,
       filteredBooks: this.props.books
     };
 
@@ -30,7 +31,7 @@ class BookList extends Component {
   }
 
   render() {
-    let books = this.props.books;
+    let books = this.state.filteredBooks;
     const bookColor = this.props.match.params.colorName;
     if (bookColor) {
       books = this.filterColors(bookColor);
